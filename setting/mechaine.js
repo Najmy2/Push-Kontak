@@ -107,7 +107,7 @@ module.exports = rezadevv = async (client, m, chatUpdate, store) => {
               if (count === 0) {
                 m.reply(`*_Berhasil Push Kontak:_*\n*_Jumlah Pesan Terkirim: ${sentCount}_*`);
               }
-            }, i * 1000); // delay setiap pengiriman selama 1 detik
+            }, i * 60000); // delay setiap pengiriman selama 1 detik
           }
         }
         break;
@@ -129,7 +129,7 @@ module.exports = rezadevv = async (client, m, chatUpdate, store) => {
               if (count === 0) {
                 m.reply(`*_Semua pesan telah dikirim!_*:\n*_Jumlah pesan terkirim:_* *_${sentCount}_*`);
               }
-            }, i * 6000);
+            }, i * 60000);
           }
         } 
         break;
